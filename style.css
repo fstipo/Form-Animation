@@ -57,6 +57,7 @@ body {
 }
 
 .form-control {
+  margin: 2rem 0 4rem;
   position: relative;
 }
 
@@ -75,8 +76,10 @@ body {
   outline: none;
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:valid {
   outline: none;
+  border-bottom-color: #add8e6;
 }
 
 .form-label {
