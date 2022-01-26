@@ -17,10 +17,27 @@
     <div class="container">
       <h2 class="form-heading">Please Login</h2>
       <form class="form">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" name="" id="email" class="form-input" />
-        <label for="password" class="form-label">Password</label>
-        <input type="password" name="" id="password" class="form-input" />
+        <div class="form-control">
+          <input
+            type="email"
+            name=""
+            id="email"
+            class="form-input"
+            autofocus
+            required
+          />
+          <label for="email" class="form-label">Email</label>
+        </div>
+        <div class="form-control">
+          <input
+            type="password"
+            name=""
+            id="password"
+            class="form-input"
+            required
+          />
+          <label for="password" class="form-label">Password</label>
+        </div>
         <button class="btn">Login</button>
       </form>
       <div class="msg">

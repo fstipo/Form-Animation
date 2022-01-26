@@ -7,7 +7,7 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Muli:wght@400;500;600;700&display=swap');
 
 html {
   /* default: 10px */
@@ -29,18 +29,19 @@ body {
   width: 100vw;
   height: 100vh;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
   color: #fff;
-  background-color: #00aaff;
+  background-color: #4682b4;
 
   overflow: hidden;
 }
 
 .container {
-  padding: 3rem;
-  width: 35rem;
+  padding: 2rem 4rem;
+  width: 40rem;
   border-radius: 0.6rem;
-  background-color: rgb(85, 85, 134);
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0.2rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .form-heading {
@@ -55,28 +56,52 @@ body {
   flex-direction: column;
 }
 
-.form-label {
-  font-size: 1.8rem;
+.form-control {
+  position: relative;
 }
 
 .form-input {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
   font-size: 1.8rem;
-
+  color: #fff;
   border: none;
   border-bottom: 0.2rem solid #fff;
   background-color: transparent;
 }
 
-#email {
-  margin-bottom: 4rem;
+.form-input {
+  outline: none;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-label {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  font-size: 1.8rem;
 }
 
 .btn {
+  display: inline-block;
   margin: 2.3rem 0;
-  padding: 1.2rem;
+  padding: 1.5rem;
 
-  font-size: 1.7rem;
-  color: #535353;
+  font-size: 1.6rem;
+  color: #272727;
+  background-color: #add8e6;
+
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
 }
 
 .msg {
@@ -87,6 +112,6 @@ body {
 }
 
 .form-link {
-  color: #b1b1b1;
+  color: #add8e6;
   text-decoration: none;
 }
