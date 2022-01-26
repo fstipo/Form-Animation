@@ -89,6 +89,19 @@ body {
   font-size: 1.8rem;
 }
 
+.form-label-span {
+  display: inline-block;
+  font-style: 1.8rem;
+  min-width: 0.5rem;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-input:focus + label span,
+.form-input:valid + label span {
+  color: #add8e6;
+  transform: translateY(-110%);
+}
+
 .btn {
   display: inline-block;
   margin: 2.3rem 0;
