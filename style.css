@@ -22,7 +22,71 @@ html {
 }
 
 body {
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100vw;
   height: 100vh;
+
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #00aaff;
+
+  overflow: hidden;
+}
+
+.container {
+  padding: 3rem;
+  width: 35rem;
+  border-radius: 0.6rem;
+  background-color: rgb(85, 85, 134);
+}
+
+.form-heading {
+  margin-bottom: 3rem;
+
+  font-size: 3rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1.8rem;
+}
+
+.form-input {
+  font-size: 1.8rem;
+
+  border: none;
+  border-bottom: 0.2rem solid #fff;
+  background-color: transparent;
+}
+
+#email {
+  margin-bottom: 4rem;
+}
+
+.btn {
+  margin: 2.3rem 0;
+  padding: 1.2rem;
+
+  font-size: 1.7rem;
+  color: #535353;
+}
+
+.msg {
+  display: flex;
+  gap: 0.5rem;
+
+  font-size: 1.4rem;
+}
+
+.form-link {
+  color: #b1b1b1;
+  text-decoration: none;
 }
